@@ -5,7 +5,7 @@
 #export P2P_PORT=6001
 
 # MongoDB configuration
-#export DB_NAME=avalon
+export DB_NAME=timbr
 #export DB_URL=mongodb://localhost:27017
 
 # Peering configuration
@@ -37,12 +37,12 @@ export REPLAY_OUTPUT=100
 #export REBUILD_RESUME_BLK=
 
 # default peers to connect with on startup
-export PEERS=
+export PEERS=ws://188.34.181.200:6001
 export MAX_PEERS=20
 
 # your user and keys (only useful for active node owners)
-export NODE_OWNER=dtube
-export NODE_OWNER_PUB=dTuBhkU6SUx9JEx1f4YEt34X9sC7QGso2dSrqE8eJyfz
-export NODE_OWNER_PRIV=34EpMEDFJwKbxaF7FhhLyEe3AhpM4dwHMLVfs4JyRto5
+#export NODE_OWNER=
+#export NODE_OWNER_PUB=
+#export NODE_OWNER_PRIV=
 
 node --stack-size=65500 src/main
